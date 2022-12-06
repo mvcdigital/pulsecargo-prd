@@ -1,0 +1,6 @@
+baseURL = "https://www.pulsecargo.co.uk/"
+languageCode = "en-gb"
+title = "Pulse Cargo"
+theme = "pulsecargo"
+relativeURLs = true
+paginate = 9

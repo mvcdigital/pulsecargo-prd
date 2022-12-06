@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="jumbotron pulse-jumbotron jumbotron-fluid mb-0" style="background-image: url(/img/about-header@2x.jpg)">
+    <div>
+        <div class="container">
+            <h1 class="text-white text-uppercase m-0">{{ .Title }}</h1>
+        </div>
+    </div>
+</div>
+<div class="container pt-5 pb-5">
+    <h2 class="text-primary mb-4">{{ .Params.SubTitle }}</h2>
+    <p class="mb-5">{{ .Content }}</p>
+</div>
+{{ end }}

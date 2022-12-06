@@ -1,0 +1,11 @@
+{
+  "name": "pulsecargo",
+  "scripts": {
+    "build": "node-sass --include-path node_modules theme.scss static/css/theme.css",
+    "watch": "node-sass --watch --include-path node_modules theme.scss static/css/theme.css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.14.0"
+  }
+}

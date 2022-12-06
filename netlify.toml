@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://pulsecargo.netlify.app"
+  to = "https://www.pulsecargo.co.uk"
+  status = 301
+  force = true

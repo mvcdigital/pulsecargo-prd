@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+{{- partial "head.html" . -}}
+
+<body>
+    {{- partial "header.html" . -}}
+    <div id="content">
+        {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+
+    <div class="preload">        
+        <img src="/img/social/fb-orange.svg" />
+        <img src="/img/social/twitter-orange.svg" />
+        <img src="/img/social/insta-orange.svg" />
+    </div>
+</body>
+
+</html>

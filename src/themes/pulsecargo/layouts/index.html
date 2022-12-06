@@ -1,0 +1,81 @@
+{{ define "main" }}
+ <div class="jumbotron pulse-jumbotron pulse-jumbotron-home jumbotron-fluid mb-0" style="background-image: url(/img/Banner%20image@2x.jpg)">
+    <div>
+        <div class="container">
+            <h1 class="text-white text-uppercase mb-4 mb-md-6">Worldwide Freight<br />Forwarding Experts</h1>
+            <a href="/contact" class="btn btn-primary pulse-button text-white text-uppercase d-none d-md-inline-block">Get a Quote</a>
+        </div>
+    </div>
+    
+</div>
+<div class="container text-center pt-6 pb-2">
+    <h2 class="text-primary mb-4">Your reliable logistics partner</h2>
+    <div class="mb-6 d-inline-block" style="max-width: 800px;">
+        <div class="mb-2">Pulse Cargo is your reliable logistics partner throughout the supply chain specialising in air, sea, road and courier. We offer an efficient service to forward your shipments quickly and cost effectively.</div>
+        <span class="font-weight-bold">We make it happen.</span>
+    </div>
+    <a href="/contact" class="btn btn-primary pulse-button text-white text-uppercase mb-5 d-md-none">Get a Quote</a>
+    <div class="row">
+        <div class="col-md-6 col-lg">
+            <a href="/services/#air" class="card pulse-card pulse-card-air border-0 text-decoration-none">
+                <div class="card-body"></div>
+                <div class="card-footer text-left p-0 pl-3">
+                    <div>Air Freight</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg">
+            <a href="/services/#sea" class="card pulse-card pulse-card-sea border-0 text-decoration-none">
+                <div class="card-body"></div>
+                <div class="card-footer text-left p-0 pl-3">
+                    <div>Sea Freight</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg">
+            <a href="/services/#road" class="card pulse-card pulse-card-road border-0 text-decoration-none">
+                <div class="card-body"></div>
+                <div class="card-footer text-left p-0 pl-3">
+                    <div>Road Freight</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg">
+            <a href="/services/#courier" class="card pulse-card pulse-card-courier border-0 text-decoration-none">
+                <div class="card-body"></div>
+                <div class="card-footer text-left p-0 pl-3">
+                    <div>Courier</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{{- partial "testimonials.html" . -}}
+<div class="container mailinglist-container text-center pt-6 pb-6">
+    <h2 class="text-primary mb-4">Join our mailing list</h2>
+    <form name="mailinglist" action="/contact/thank-you" method="post" data-netlify="true" class="pulse-form position-relative">
+        <div class="row">
+            <div class="col-md-5 mb-3">
+                <input name="name" type="text" placeholder="Name" class="form-control" required />
+            </div>
+            <div class="col-md-5 mb-3">
+                <input name="email" type="email" placeholder="Email Address" class="form-control" required />
+            </div>
+            <div class="col-md-2 mb-3 d-none d-md-block">
+                <button type="submit" class="btn btn-primary text-uppercase w-100 text-white">Join</button>
+            </div>
+        </div>
+        <div class="text-left">
+            <div class="form-check mb-3 mb-md-0">
+                <input type="checkbox" name="termsAgreed" id="termsAgreed" class="form-check-input" required>
+                <label for="termsAgreed" class="form-check-label">
+                  I agree to the terms and conditions.
+                </label>
+                <a href="/terms-and-conditions" target="_blank" style="white-space: nowrap;">Learn more</a>.
+            </div>
+        </div>
+        <input type="hidden" name="Subject" value="Mailing list entry from website" />        
+        <button type="submit" class="btn btn-primary text-uppercase w-100 text-white d-md-none">Join</button>
+    </form>
+</div>
+{{ end }}

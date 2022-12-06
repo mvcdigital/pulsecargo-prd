@@ -1,0 +1,36 @@
+{{ define "main" }}
+ <div class="jumbotron pulse-jumbotron jumbotron-fluid mb-0" style="background-image: url(/img/about-header@2x.jpg)">
+    <div>
+        <div class="container">
+            <h1 class="text-white text-uppercase m-0">About Us</h1>
+        </div>
+    </div>
+</div>
+<div class="container pt-5 pb-5">
+    <div class="row mt-md-5 mb-md-5">
+        <div class="col-lg-8 mb-5">
+            <h2 class="text-primary mb-4">Experts in freight industry logistics</h2>
+            <p class="mb-5">Pulse Cargo is dedicated to meet and exceed customer expectations. Our operational procedures ensure a highly consistent service in order to retain customers throughout the complex logistical challenges that face the freight industry today. Our clients have come to appreciate our quick responses and expertise within the industry and this is how we succeed at retaining our customers.</p>
+            <p class="mb-5">Pulse Cargo covers all of its clients' shipping needs and requirements to and from any worldwide destination, offering air, sea, road and courier services. We can provide you with excellent freight rates due to relationships built with a large amount of logistic providers and the preferential rates we receive from them. The consistently high level of customer service we continue to provide means we have long-term relationships with a number of our customers, enjoying our service.</p>
+            <a href="/contact" class="btn btn-primary pulse-button text-white text-uppercase">Get a Quote</a>
+        </div>
+        <div class="col-lg-4">
+            <div class="pulse-separator"></div>
+            <div class="pulse-listbox">
+                <div>
+                    <div class="p-5">
+                        <h4 class="mb-4">Why choose us?</h4>
+                        <ul>
+                            <li class="li-globe">Any worldwide destination</li>
+                            <li class="li-rates">Excellent rates</li>
+                            <li class="li-quick">Quick responses</li>
+                            <li class="li-personalised">Personalised service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{- partial "testimonials.html" . -}}
+{{ end }}
