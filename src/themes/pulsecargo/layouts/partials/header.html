@@ -2,6 +2,7 @@
 {{ $aboutCls := cond (eq .Section "about") " active" "" }}
 {{ $servicesCls := cond (eq .Section "services") " active" "" }}
 {{ $quoteCls := cond (eq .Section "contact") " active" "" }}
+{{ $trackCls := cond (eq .Section "track") " active" "" }}
 {{ $loginCls := cond (eq .Section "login") " active" "" }}
 <div class="bg-dark d-none d-md-block">
     <div class="container contact-bar text-right pt-1 pb-1">
@@ -40,6 +41,9 @@
               </li>
               <li class="nav-item {{ $quoteCls }}">
                   <a class="nav-link text-uppercase" href="/contact">Get a Quote</a>
+              </li>
+              <li class="nav-item {{ $trackCls }}">
+                  <a class="nav-link text-uppercase" href="/track">Track shipment</a>
               </li>
               <li class="nav-item {{ $loginCls }}">
                   <a class="nav-link text-uppercase nav-link-login" href="https://www.boxtrax.com/login.aspx?owner=PULSE" target="_blank">Login</a>
